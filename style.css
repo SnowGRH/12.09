@@ -1,0 +1,78 @@
+
+body{
+    background-image: url("kep/hatter.jpg");
+}
+main,nav,article,aside,footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    border: 1px solid black;
+    background-color: white;
+}
+main{
+    margin: 0 20% 0 20%;
+    grid-template-areas: 
+    "h h h"
+    "n ar as"
+    "fo fo fo"
+    ;
+}
+header{
+    grid-area: h;
+    background-image: url("kep/fejlec.jpg");
+    background-repeat: repeat;
+    height: 150px;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: n;
+
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    list-style-type: none;
+    margin: 2px;
+    width: 90%;
+}
+nav ul li a{
+    display: inline-block;
+    background-color:rgb(66, 127, 207) ;
+    padding: 5px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+article{
+    grid-area: ar;
+    width: 100%;
+    padding: 10px;
+
+}
+aside{
+    grid-area: as;
+}
+footer{
+    grid-area: fo;
+}
+table{
+    font-size: 15px;
+    width: 100%;
+}
+table>tr{
+    height: 20px;
+
+}
+tr:nth-child(odd){
+    background-color: rgb(110, 110, 231);
+}
+table, td, th {
+    border-bottom: 1px solid rgb(40, 94, 138);
+    border-collapse: collapse;
+
+  }
+
